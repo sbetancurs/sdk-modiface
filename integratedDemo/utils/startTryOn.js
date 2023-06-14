@@ -140,6 +140,11 @@ async function initCurrentLookObject() {
 
     const swatchList = ['swatch1', 'swatch2', 'swatch3', 'swatch4', 'swatch5'];
 
+    let lookObjInput = {
+        lipcolor: {},
+        eyeshadow: {},
+    };
+
     for (let i = 0; i < 5; i += 1) {
         lookObjInput.lipcolor[swatchList[i]] = upcInfo.lipcolor[lipcolorUpcList[i]].shadeArray[0];
         lookObjInput.eyeshadow[swatchList[i]] = upcInfo.eyeshadow[eyeshadowUpcList[i]].shadeArray[0];

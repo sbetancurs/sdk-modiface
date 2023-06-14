@@ -7,16 +7,6 @@ function hideAdjustCtas() {
     document.getElementById('adjust-lips-cta').style.display = 'none';
 }
 
-function loading() {
-    document.getElementById('loading-overlay').style.display = 'block';
-    document.getElementById('gif-loader').style.display = 'block';
-}
-
-function loaded() {
-    document.getElementById('loading-overlay').style.display = 'none';
-    document.getElementById('gif-loader').style.display = 'none';
-}
-
 async function startLive() {
     currentMode = 'LIVE_MODE';
     loading();
